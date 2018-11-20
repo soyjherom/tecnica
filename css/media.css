@@ -1,31 +1,149 @@
 @media screen and (max-width: 2560px){
-
+    h1{
+        font-size: 2.8em;
+    }
+    
+    h2{
+        font-size: 2.3em;
+    }
+    
+    h3{
+        font-size: 1.8em;
+    }
+    
+    p{
+        font-size: 1.3em;
+    }
+    li{
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (max-width: 1440px){
+    body{
+        margin: 0 15%;
+    }
 
+    .hero-article{
+        width: initial;
+    }
 }
 
 @media screen and (max-width: 1024px){
-
+    body{
+        margin: 0 7%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    
+    h2{
+        font-size: 1.5em;
+    }
+    
+    h3{
+        font-size: 1.2em;
+    }
+    
+    p{
+        font-size: .8em;
+    }
+    li{
+        font-size: .8em;
+    }
+    .hero-article{
+        height: max-content;
+    }
 }
 
 @media screen and (max-width: 768px){
-
+    body{
+        margin: 0 auto;
+    }
+    .hero-article{
+        height: 370px;
+    }
+    .hero{
+        margin: 5% 0;
+        width: 100%;
+    }
+    .hero-article{
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .details{
+        width: 100%;
+        height: 70%;
+    }
+    .image-container{
+        width: 100%;
+        height: 30%;
+    }
 }
 
 @media screen and (max-width: 425px){
+
     body{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
     }
+
+    .header .menu-area{
+        display: flex;
+        justify-content: space-between;
+        padding: 3% 2% 1% 2%; 
+    }
+
+    .header .menu-area h1{
+        margin: 0;
+    }
+
+    .header .menu-area .icon-menu{
+        font-size: 2em;
+    }
+
+    .icon-menu{
+        display: flex;
+    }
+
+    .menu{
+        position: fixed;
+        background: #1b2127;
+        z-index: 3;
+        top: 0;
+        left: -1000vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        transition: .3s;
+    }
+
+    .menu.is-active{
+        left: 0;
+    }
+
+    .header ol li{
+        height: 40px;
+    }
+    
+    .header ol li a{
+        padding: 0 5px;
+    }
+    .image-container{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 375px){
-
+    /* .entrada-plataforma{
+        padding-top: 80%;
+    } */
 }
 
 @media screen and (max-width: 320px){
-
+    
 }
