@@ -1,11 +1,11 @@
-$(function(){
-    var $page = jQuery.url.attr("file");
-    $('nav.menu ol li a').each(function(){
-        var $href = $(this).attr('href');
-        if ( ($href == $page) || ($href == '') ) {
-            $(this).addClass('on');
-        } else {
-            $(this).removeClass('on');
-        }
-    });
-});
+function showMenu(){
+    const menuBar = document.querySelector('.menu');
+    const menuIsActive = document.querySelector('.is-active');
+    
+    console.log(menuIsActive);
+    if(menuIsActive == null){
+        menuBar.classList.add('is-active');
+    } else {
+        menuBar.classList.remove('is-active');
+    }
+}
